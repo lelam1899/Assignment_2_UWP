@@ -1,0 +1,65 @@
+﻿<Page
+    x:Class="Assignment2_UWP.Pages.Register"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Assignment2_UWP.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <ScrollViewer Margin="20">
+        <StackPanel Margin="40" HorizontalAlignment="Center" VerticalAlignment="top" Orientation="Vertical">
+            <TextBlock HorizontalAlignment="Center" FontSize="25" FontStyle="Italic" Margin="0 20"  >Register</TextBlock>
+            <TextBlock Text="Firstname"/>
+            <TextBox x:Name="FirstName"></TextBox>
+
+            <TextBlock Text="LastName"/>
+            <TextBox x:Name="LastName"></TextBox>
+
+            <TextBlock Text ="Password"/>
+            <PasswordBox x:Name="Password"></PasswordBox>
+
+            <TextBlock Text="Confirm Password"/>
+            <PasswordBox x:Name="Confirm"></PasswordBox>
+
+            <TextBlock Text="Address"/>
+            <TextBox x:Name="Address"></TextBox>
+
+            <TextBlock Text="Avatar"/>
+            <StackPanel>
+
+                <TextBox x:Name="Avatar"></TextBox>
+                <Image x:Name="ImageControl" Width="20" Height="20"/>
+                <Button HorizontalAlignment="Center" Margin="0 -20 0 20 " Click="Button_Click">Take photo</Button>
+
+            </StackPanel>
+
+
+
+            <DatePicker x:Name="Birthday" Header="Birthday"/>
+
+
+            <TextBlock Text="Email"/>
+            <TextBox x:Name="Email"></TextBox>
+
+
+            <TextBlock Text="Gender" x:Name="Gender" />
+            <StackPanel Orientation="Horizontal">
+
+                <RadioButton Content="Male" Tag="1" GroupName="Gender" Checked="RadioButton_Checked"/>
+                <RadioButton Content="Female" Tag="2" GroupName="Gender" Checked="RadioButton_Checked"/>
+
+            </StackPanel>
+
+            <TextBlock Text="Introduction"/>
+            <TextBox x:Name="Introduction"></TextBox>
+
+            <TextBlock Text="Phone"/>
+            <TextBox x:Name="Phone"></TextBox>
+
+            <Button HorizontalAlignment="Center" Margin="0 10 0 0" Width="100" Height="40" Click="Button_Register_Click" Content="Register"/>
+
+        </StackPanel>
+    </ScrollViewer>
+</Page>

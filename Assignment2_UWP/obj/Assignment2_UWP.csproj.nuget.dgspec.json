@@ -37,9 +37,23 @@
       "frameworks": {
         "uap10.0.18362": {
           "dependencies": {
+            "JetBrains.ReSharper.CommandLineTools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2019.2.2, )"
+            },
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
               "version": "[6.2.8, )"
+            },
+            "Microsoft.Toolkit": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
             }
           },
           "imports": [
